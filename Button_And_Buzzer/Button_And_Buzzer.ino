@@ -1,5 +1,5 @@
 int button1=13, button2=12, buzzer=2;
-int on=450,off=900;
+int on=450;
 void setup() {
   Serial.begin(9600);
   pinMode(button1,INPUT);
