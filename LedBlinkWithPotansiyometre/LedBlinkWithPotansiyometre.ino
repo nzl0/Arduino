@@ -5,6 +5,7 @@ int on=900,off=450;
 
 void setup() {
   Serial.begin(9600);
+  pinMode(potansiyometre,INPUT);
   pinMode(redPin,OUTPUT);
   pinMode(greenPin,OUTPUT);
 }
