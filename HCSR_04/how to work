@@ -1,6 +1,4 @@
 
-
-
 ##  HC_SR04 SENSÖRÜ VE ÇALIŞMA MANTIĞI  ##
 
 •	HC_SR04 Ultrasonic sensör, insan kulağının duyamayacağı seviyedeki ses dalgalarıyla(ses dalgalarının yansıma süresini kullanarak) mesafe ölçümü yapar. 
