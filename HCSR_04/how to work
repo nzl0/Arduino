@@ -1,0 +1,16 @@
+
+##  HC_SR04 SENSÖRÜ VE ÇALIŞMA MANTIĞI  ##
+
+•	HC_SR04 Ultrasonic sensör, insan kulağının duyamayacağı seviyedeki ses dalgalarıyla(ses dalgalarının yansıma süresini kullanarak) mesafe ölçümü yapar. 
+•	Vcc, Trig, Echo ve GND olmak üzere 4 ayrı pini vardır.
+
+•	Vcc pini, Arduino Uno’da bir güç kaynağına (+5V) bağlanmalıdır. +3.3V'a bağlanırsa çalışmaz.
+•	Trig pini ise herhangi bir dijital pine bağlanabilir. pinMode() fonksiyonunda “OUTPUT” olarak ayarlanmalıdır. Trigger(tetikleyici) kelimesinden gelmektedir. Ultrasonic dalganın başlaması bu pinin aktif olmasıyla (HIGH=1) mümkündür. 
+  Trig pinine 10 mikrosaniyelik lojik (HIGH=1) sinyali gönderilir.
+•	Bu sinyal gönderildiğinde, sensör 40 kHz frekansında ultrasonik ses dalgası üretir.
+•	Ses dalgası bir engele çarparak geri yansır.
+•	Yansıyan ses dalgası sensöre döner ve bu sırada Echo pini HIGH olur. Echo pinin HIGH kaldığı süre, ses dalgasının gidip gelme süresidir (mikrosaniye cinsinden ölçülür). 
+•	Mesafe ise süreye bağlı olarak hesaplanır. Sesin havada 343m/s ile yayıldığı düşünülürse basit bir matematik hesabıyla istenen birimde cisim ile sensör arasındaki mesafe ölçülebilir.
+
+•	Echo pini de herhangi bir dijital pine bağlanabilir. pinMode() fonksiyonunda ise “INPUT” olarak ayarlanmalıdır.
+
